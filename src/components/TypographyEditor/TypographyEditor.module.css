@@ -1,0 +1,248 @@
+.PopupPrentWrapper {
+  max-width: 400px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-right: 1px solid #ddd;
+}
+
+.typographyHeader {
+  max-width: 280px;
+  width: 100%;
+  height: 90px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.typographyEditor {
+  position: absolute;
+  top: 85%;
+  right: 0;
+  width: 100%;
+}
+
+.editTypographyTools {
+  display: flex;
+  border: 1px solid #b4b1b1;
+  border-radius: 3px;
+}
+
+.globalIcon,
+.editTypographyIcon {
+  width: 15px;
+  height: 15px;
+  padding: 5px 8px;
+  color: #696969;
+  cursor: pointer;
+  transition: all 0.3s linear;
+}
+
+.globalIcon:hover,
+.editTypographyIcon:hover {
+  background-color: #ddd;
+}
+
+.typographyPopupWrapper {
+  /* max-width: 280px; */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  position: relative;
+}
+
+.typographyPopupWrapper::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -6px;
+  right: 2px;
+  border: 6px solid #fff;
+  border-color: transparent transparent #fff #fff;
+  transform: translateX(-50%) rotate(135deg);
+  box-shadow: -2px 2px 3px rgb(117 121 122 / 7%);
+}
+
+.typographyWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 20px;
+}
+
+.typrographyPopupHeader {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  box-shadow: rgba(33, 35, 38, 0.1) 0px 1px 0px;
+}
+
+.typographyToolsWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.typography {
+  font-size: 14px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.tool {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 5px;
+  border-radius: 3px;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px,
+    rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+}
+
+.toolsIcon {
+  width: 10px;
+  height: 10px;
+}
+
+.fontFamilyWrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.selectedFont {
+  background-color: bisque;
+  color: black;
+}
+
+.fontStyle {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Acctual CSS start here  */
+
+.typographyPropertiesWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.propName {
+  font-size: 14px;
+}
+
+.triangleAndSelectedValue {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.selectValueWrapper {
+  width: 100px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+
+.valueWrapper {
+  width: 100%;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+  border-top: 1px solid #ddd;
+  opacity: 0;
+  height: 0;
+  z-index: 1111;
+  overflow: hidden;
+}
+
+.activeValueWrapper {
+  opacity: 1;
+  height: auto;
+}
+
+.showSelectedValue {
+  font-size: 13px;
+}
+
+.value {
+  padding: 5px 10px;
+  font-size: 13px;
+}
+
+.value:hover {
+  cursor: pointer;
+  background: #f3f2f5;
+}
+
+.selectedValue {
+  background: #e7e8eb;
+}
+
+/* Typography range proprety css start here  */
+
+.typographyRangePropertiesWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.rangePropertiesHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.propretyName {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+}
+
+.desktopIcon {
+  width: 15px;
+  height: 15px;
+}
+
+.pixelType {
+  border: none;
+  outline: none;
+}
+
+.rangeWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.rangeValue {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 20px;
+  font-size: 14px;
+  padding: 2px 5px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  text-align: center;
+}

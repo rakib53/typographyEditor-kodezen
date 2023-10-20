@@ -1,0 +1,27 @@
+.App {
+  height: 100vh;
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  gap: 80px;
+  padding: 0 50px;
+}
+
+.navbar {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 40px;
+  color: #7c5fff;
+}
+
+.menuWrapper {
+  display: flex;
+  gap: 30px;
+  list-style-type: none;
+}
